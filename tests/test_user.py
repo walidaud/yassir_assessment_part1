@@ -1,11 +1,10 @@
-# tests/test_users.py
 import pytest
-import time
+import uuid
 from utils.api_client import post, get
 
 @pytest.fixture
 def new_user():
-    unique_email = f"testuser_{int(time.time())}@example.com"
+    unique_email = f"testuser_{uuid.uuid4().hex}@example.com"
     payload = {
         "name": "Test User",
         "gender": "male",
@@ -13,9 +12,9 @@ def new_user():
         "status": "active"
     }
     response = post("/users", payload)
-    print(response.json())  # For debugging if needed
+    print(response.json())  # For debugging
     assert response.status_code == 201, f"User creation failed: {response.json()}"
-    return response.json()  # Return actual user data
+    return response.json()
 
 def test_create_user(new_user):
     assert new_user["email"].startswith("testuser_")
