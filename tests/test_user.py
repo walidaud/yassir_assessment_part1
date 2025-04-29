@@ -7,7 +7,7 @@ def new_user():
     payload = {
         "name": "Test User",
         "gender": "male",
-        "email": "testuser@example.com",
+        "email": "testuseranom@example.com",
         "status": "active"
     }
     response = post("/users", payload)
