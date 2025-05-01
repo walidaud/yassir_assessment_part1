@@ -29,4 +29,4 @@ This project automates RESTful API testing using Python and pytest for the [GoRE
    # Set your GoREST access token in config.py
 
    # Run the tests
-   pytest
+   PYTHONPATH=. pytest --maxfail=2 --disable-warnings
