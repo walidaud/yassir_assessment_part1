@@ -16,7 +16,7 @@ This project automates RESTful API testing using Python and pytest for the [GoRE
 
 -  Clone and Set Up the Project
    ```bash
-   git clone https://github.com/your-username/yassir_assessment_part1.git
+   git clone https://github.com/walidaud/yassir_assessment_part1.git
    cd yassir_assessment_part1
 
    # Create and activate a virtual environment
