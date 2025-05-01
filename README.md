@@ -1,25 +1,32 @@
-# README.md
+# API Test Automation: GoREST /users Endpoint
 
-# GoREST API Automation
+This project automates RESTful API testing using Python and pytest for the [GoREST API](https://gorest.co.in/). It focuses on the /users endpoint and demonstrates automated validation of various HTTP methods.
 
-Automated tests for GoREST's RESTful API using Python, Pytest, and GitHub Actions.
+---
 
-## Features
-- Authenticated API testing
-- Modular and scalable test structure
-- GitHub Actions integration for CI
+## Requirements
 
-## Setup
-```bash
-pip install -r requirements.txt
-```
+- Python 3.10
+- pip (Python package manager)
+- A personal access token from [https://gorest.co.in/](https://gorest.co.in/)
 
-Add your GoREST token to `utils/config.py`:
-```python
-ACCESS_TOKEN = "your_token_here"
-```
+---
 
-## Running Tests
-```bash
-pytest
-```
+## Setup Instructions
+
+-  Clone and Set Up the Project
+   ```bash
+   git clone https://github.com/your-username/yassir_assessment_part1.git
+   cd yassir_assessment_part1
+
+   # Create and activate a virtual environment
+   python -m venv venv
+   venv\Scripts\activate
+
+   # Install dependencies
+   pip install -r requirements.txt
+
+   # Set your GoREST access token in config.py
+
+   # Run the tests
+   pytest
